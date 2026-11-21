@@ -12,8 +12,8 @@
   <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Cdefs%3E%3ClinearGradient id='g' x1='0' x2='1' y1='0' y2='1'%3E%3Cstop offset='0' stop-color='%23FF2A85'/%3E%3Cstop offset='1' stop-color='%2300E5FF'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='64' height='64' rx='14' fill='url(%23g)'/%3E%3Ctext x='32' y='42' font-family='Arial Black,Arial' font-weight='900' font-size='24' text-anchor='middle' fill='%23fff'%3EML%3C/text%3E%3C/svg%3E" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Syne:wght@700;800&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="styles.css?v=1795295247" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css?v=1795300890" />
 </head>
 <body>
   <!-- ============ LOGO SYMBOL: MOCEAN LUXE — SOUTH FLORIDA ============ -->
@@ -80,6 +80,7 @@
     <section class="hero">
       <div class="hero-bg" aria-hidden="true"></div>
       <div class="container hero-inner">
+        <div class="hero-copy">
         <span class="eyebrow-badge">Miami-Dade · Broward · Palm Beach · Private FBO</span>
         <p class="tagline">Vice City Nights · Private Black Truck Fleet</p>
         <h1 class="hero-title">
@@ -102,95 +103,21 @@
           <a href="https://instagram.com/moceanluxe" target="_blank" rel="noopener" class="contact-chip"><svg class="ico" aria-hidden="true"><use href="#i-ig"/></svg><span><small>Instagram</small>@MOCEANLUXE</span></a>
           <span class="contact-chip contact-chip-static"><svg class="ico" aria-hidden="true"><use href="#i-clock"/></svg><span><small>Dispatch</small>Available 24/7 · South Florida</span></span>
         </div>
+        </div>
+
+        <!-- Photo slots: assets/suburban-exterior.jpg (~1600×1200) and assets/starlight-roof.jpg (~1200×900) -->
+        <div class="hero-media">
+          <figure class="media hm-exterior">
+            <img src="assets/suburban-exterior.jpg" alt="Black Chevy Suburban Z71 exterior at night" data-fallback loading="eager" decoding="async" />
+            <figcaption class="media-fallback" aria-hidden="true"><span>Suburban Z71 — after dark</span></figcaption>
+          </figure>
+          <figure class="media hm-starlight">
+            <img src="assets/starlight-roof.jpg" alt="Starlight headliner roof inside the Suburban" data-fallback loading="eager" decoding="async" />
+            <figcaption class="media-fallback" aria-hidden="true"><span>Starlight roof</span></figcaption>
+          </figure>
+        </div>
       </div>
 
-      <!-- Neon horizon · sunset · palms · black truck -->
-      <div class="hero-scene" aria-hidden="true">
-        <svg viewBox="0 0 1200 360" preserveAspectRatio="xMidYMax slice">
-          <defs>
-            <linearGradient id="sun" x1="0" y1="0" x2="0" y2="1">
-              <stop offset="0" stop-color="#FF5E9E"/>
-              <stop offset=".55" stop-color="#FF2A85"/>
-              <stop offset="1" stop-color="#8A2BE2"/>
-            </linearGradient>
-            <mask id="sunStripes">
-              <rect x="0" y="0" width="1200" height="360" fill="#fff"/>
-              <rect x="0" y="178" width="1200" height="4" fill="#000"/>
-              <rect x="0" y="196" width="1200" height="6" fill="#000"/>
-              <rect x="0" y="214" width="1200" height="8" fill="#000"/>
-              <rect x="0" y="232" width="1200" height="10" fill="#000"/>
-              <rect x="0" y="250" width="1200" height="12" fill="#000"/>
-            </mask>
-            <clipPath id="aboveHorizon"><rect x="0" y="0" width="1200" height="262"/></clipPath>
-            <linearGradient id="floor" x1="0" y1="0" x2="0" y2="1">
-              <stop offset="0" stop-color="#1a0833"/>
-              <stop offset="1" stop-color="#050914"/>
-            </linearGradient>
-            <linearGradient id="horizonGlow" x1="0" x2="1">
-              <stop offset="0" stop-color="#00E5FF" stop-opacity="0"/>
-              <stop offset=".2" stop-color="#00E5FF"/>
-              <stop offset=".5" stop-color="#FF2A85"/>
-              <stop offset=".8" stop-color="#00E5FF"/>
-              <stop offset="1" stop-color="#00E5FF" stop-opacity="0"/>
-            </linearGradient>
-            <filter id="glow" x="-50%" y="-50%" width="200%" height="200%">
-              <feGaussianBlur stdDeviation="4" result="b"/>
-              <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
-            </filter>
-            <g id="palm" fill="#07030f">
-              <path d="M-6 0 C 0 -60 -4 -120 10 -184 L 20 -182 C 8 -120 12 -60 6 0 Z"/>
-              <path d="M15 -184 Q -25 -214 -86 -166 Q -30 -194 15 -176 Z"/>
-              <path d="M15 -184 Q -10 -236 -60 -232 Q -12 -222 12 -178 Z"/>
-              <path d="M15 -184 Q 30 -240 82 -228 Q 34 -224 18 -178 Z"/>
-              <path d="M15 -184 Q 60 -214 116 -170 Q 60 -196 18 -176 Z"/>
-              <path d="M15 -184 Q 50 -188 74 -128 Q 44 -172 16 -178 Z"/>
-              <path d="M15 -184 Q -20 -186 -42 -126 Q -14 -170 14 -178 Z"/>
-            </g>
-          </defs>
-
-          <!-- sun -->
-          <g clip-path="url(#aboveHorizon)">
-            <circle cx="600" cy="262" r="150" fill="url(#sun)" mask="url(#sunStripes)" opacity=".95"/>
-          </g>
-
-          <!-- far skyline -->
-          <path d="M120 262 V236 h18 v-14 h14 v22 h20 v-34 h16 v34 h12 v-18 h22 v18 h40 v-10 h18 v10 H420 M780 262 V240 h26 v-30 h14 v30 h18 v-46 h20 v46 h12 v-20 h18 v20 h22 v-12 h24 v12 H1080" fill="#0b0520" stroke="#8A2BE2" stroke-opacity=".35" stroke-width="1"/>
-
-          <!-- floor + grid -->
-          <rect x="0" y="262" width="1200" height="98" fill="url(#floor)"/>
-          <g stroke="#00E5FF" stroke-opacity=".35" stroke-width="1">
-            <line x1="0" y1="272" x2="1200" y2="272"/>
-            <line x1="0" y1="286" x2="1200" y2="286"/>
-            <line x1="0" y1="306" x2="1200" y2="306"/>
-            <line x1="0" y1="334" x2="1200" y2="334"/>
-            <line x1="600" y1="262" x2="600" y2="360"/>
-            <line x1="600" y1="262" x2="420" y2="360"/>
-            <line x1="600" y1="262" x2="780" y2="360"/>
-            <line x1="600" y1="262" x2="200" y2="360"/>
-            <line x1="600" y1="262" x2="1000" y2="360"/>
-            <line x1="600" y1="262" x2="-40" y2="360"/>
-            <line x1="600" y1="262" x2="1240" y2="360"/>
-          </g>
-          <rect x="0" y="260" width="1200" height="3" fill="url(#horizonGlow)" filter="url(#glow)"/>
-
-          <!-- palms -->
-          <use href="#palm" transform="translate(90 300) scale(1.25)"/>
-          <use href="#palm" transform="translate(210 290) scale(.9) scale(-1 1)"/>
-          <use href="#palm" transform="translate(1000 296) scale(1.05) scale(-1 1)"/>
-          <use href="#palm" transform="translate(1120 306) scale(1.35)"/>
-
-          <!-- black truck -->
-          <g transform="translate(456 250) scale(.45)">
-            <path d="M40 150 L60 112 Q70 92 95 88 L190 80 L245 42 Q258 34 280 34 L470 34 Q495 34 508 50 L548 92 L590 100 Q610 104 612 124 L612 150 Z" fill="#05030a"/>
-            <path d="M40 150 L60 112 Q70 92 95 88 L190 80 L245 42 Q258 34 280 34 L470 34 Q495 34 508 50 L548 92 L590 100 Q610 104 612 124 L612 150" fill="none" stroke="#00E5FF" stroke-width="3" filter="url(#glow)"/>
-            <path d="M258 46 L300 46 L300 82 L212 84 Z M312 46 L398 46 L398 82 L312 82 Z M410 46 L478 46 Q490 46 498 56 L524 84 L410 82 Z" fill="#14082a" stroke="#FF2A85" stroke-opacity=".6" stroke-width="1.5"/>
-            <circle cx="160" cy="150" r="30" fill="#05030a" stroke="#FF2A85" stroke-width="3"/>
-            <circle cx="500" cy="150" r="30" fill="#05030a" stroke="#FF2A85" stroke-width="3"/>
-            <rect x="44" y="112" width="18" height="8" rx="3" fill="#FF2A85" filter="url(#glow)"/>
-            <rect x="590" y="110" width="20" height="7" rx="3" fill="#F8FAFF" filter="url(#glow)"/>
-          </g>
-        </svg>
-      </div>
     </section>
 
     <!-- ============ FLEET ============ -->
@@ -210,12 +137,7 @@
             <figure class="media media-hero">
               <img src="assets/suburban-hero.png" alt="Premium Black Chevy Suburban Z71" data-fallback loading="eager" decoding="async" />
               <figcaption class="media-fallback" aria-hidden="true">
-                <svg viewBox="0 0 640 200" class="media-fallback-art">
-                  <path d="M40 150 L60 112 Q70 92 95 88 L190 80 L245 42 Q258 34 280 34 L470 34 Q495 34 508 50 L548 92 L590 100 Q610 104 612 124 L612 150" fill="none" stroke="currentColor" stroke-width="3"/>
-                  <circle cx="160" cy="150" r="28" fill="none" stroke="#FF2A85" stroke-width="3"/>
-                  <circle cx="500" cy="150" r="28" fill="none" stroke="#FF2A85" stroke-width="3"/>
-                </svg>
-                <span>Suburban Z71 · Blacked Out</span>
+                <span>Suburban Z71 — blacked out</span>
               </figcaption>
             </figure>
 
@@ -487,6 +409,6 @@
   <!-- Print-only formal contract (populated on sign) -->
   <div id="printContract" class="print-contract" aria-hidden="true"></div>
 
-  <script src="app.js?v=1795295247"></script>
+  <script src="app.js?v=1795300890"></script>
 </body>
 </html>
